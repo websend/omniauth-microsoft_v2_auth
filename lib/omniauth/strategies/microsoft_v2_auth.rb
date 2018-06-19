@@ -31,7 +31,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('https://graph.microsoft.com/v1.0/me').parsed
+        @raw_info ||= access_token.get('https://graph.microsoft.com/beta/me').parsed
       end
 
       def authorize_params
